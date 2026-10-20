@@ -1,0 +1,15 @@
+variable,class_set,k_classes,pearson_vs_rg_target_mean,spearman_vs_rg_target_mean
+amplitude_pixel_mean,classes with n >= 500,9,-0.13142093529619298,0.11666666666666665
+amplitude_pixel_mean,"n >= 500, excluding built-up and water",7,0.5135210439233187,0.6071428571428572
+amplitude_class_curve,classes with n >= 500,9,0.02430284874023579,0.15
+amplitude_class_curve,"n >= 500, excluding built-up and water",7,0.6677415725330839,0.642857142857143
+relative_amplitude_class_curve,classes with n >= 500,9,-0.23678558105257616,0.26666666666666666
+relative_amplitude_class_curve,"n >= 500, excluding built-up and water",7,0.8392909299277024,0.8214285714285715
+amplitude_2017_only_pixel_mean,classes with n >= 500,9,-0.15032214152779405,0.03333333333333333
+amplitude_2017_only_pixel_mean,"n >= 500, excluding built-up and water",7,0.35765704296458534,0.4642857142857144
+baseline_annual_mean_NBR,classes with n >= 500,9,-0.14335581516455753,0.049999999999999996
+baseline_annual_mean_NBR,"n >= 500, excluding built-up and water",7,-0.6317905622765567,-0.5357142857142858
+ref_2017_mean_NBR,classes with n >= 500,9,-0.2387350944523261,-0.03333333333333333
+ref_2017_mean_NBR,"n >= 500, excluding built-up and water",7,-0.7344969794084732,-0.5714285714285715
+"amplitude (pixel) vs recovery gap (pixel), pooled","burned pixels, classes n >= 500",278187,,0.11295239747813082
+"amplitude (pixel) vs recovery gap (pixel), within-class mean (n-weighted)","burned pixels, classes n >= 500",278187,,0.08146330254313147

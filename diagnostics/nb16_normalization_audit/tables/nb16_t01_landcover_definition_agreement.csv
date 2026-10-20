@@ -1,0 +1,12 @@
+comparison,n,pct_same_class,largest_disagreement
+burned sampled pixels on the grid,295006,85.06098181053945,
+lc_dominant = bare,5784,64.43637621023514,grassland (21.0%)
+lc_dominant = built-up,821,72.8380024360536,shrubland (10.0%)
+lc_dominant = covered agriculture,108,80.55555555555556,fallow (13.0%)
+lc_dominant = cropland,48360,92.97146401985111,grassland (2.7%)
+lc_dominant = fallow,5778,51.00380754586362,grassland (34.1%)
+lc_dominant = forest,38283,85.74824334561032,shrubland (10.6%)
+lc_dominant = grassland,123241,89.22355384977402,shrubland (4.9%)
+lc_dominant = orchards,4677,73.89352148813342,cropland (17.7%)
+lc_dominant = shrubland,66474,76.74579534855734,grassland (13.1%)
+lc_dominant = water,1480,91.62162162162161,shrubland (5.2%)

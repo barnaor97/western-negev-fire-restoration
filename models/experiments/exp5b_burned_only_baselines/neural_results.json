@@ -1,0 +1,81 @@
+{
+ "results": {
+  "L-TAE": {
+   "all_test": {
+    "severity": 0.7739571566674625,
+    "persistence": 0.5229459050414018,
+    "recovery_gap": 0.6920906333999192
+   },
+   "burned_test": {
+    "severity": {
+     "pearson": 0.8487197079012802,
+     "spearman": 0.8313937304759246
+    },
+    "persistence": {
+     "pearson": 0.9623732095676273,
+     "spearman": 0.9600447298026022
+    },
+    "recovery_gap": {
+     "pearson": 0.982804711760518,
+     "spearman": 0.9697004954220024
+    }
+   }
+  },
+  "BiGRU": {
+   "all_test": {
+    "severity": 0.7746983343560121,
+    "persistence": 0.5150356953741598,
+    "recovery_gap": 0.6842059383447929
+   },
+   "burned_test": {
+    "severity": {
+     "pearson": 0.9019887637969833,
+     "spearman": 0.881458753566686
+    },
+    "persistence": {
+     "pearson": 0.9751866404466005,
+     "spearman": 0.9737140916439705
+    },
+    "recovery_gap": {
+     "pearson": 0.9911480027984538,
+     "spearman": 0.9768314737969425
+    }
+   },
+   "saved_all_test": {
+    "severity": 0.7746877074241638,
+    "persistence": 0.5150132775306702,
+    "recovery_gap": 0.6841943860054016
+   },
+   "checkpoint_sha256": "f3723207f51eef1193faa225f5a4d59133afeb0283a877f0a8ed03a8eb1e3e70"
+  },
+  "TempCNN": {
+   "all_test": {
+    "severity": 0.7451577528539317,
+    "persistence": 0.502449590311119,
+    "recovery_gap": 0.6633979307842867
+   },
+   "burned_test": {
+    "severity": {
+     "pearson": 0.8901391021610786,
+     "spearman": 0.8664495141663404
+    },
+    "persistence": {
+     "pearson": 0.9652616142480178,
+     "spearman": 0.9637319604850381
+    },
+    "recovery_gap": {
+     "pearson": 0.9855453823073342,
+     "spearman": 0.9701812262418896
+    }
+   },
+   "saved_all_test": {
+    "severity": 0.7451575994491577,
+    "persistence": 0.5024495720863342,
+    "recovery_gap": 0.6633979678153992
+   },
+   "checkpoint_sha256": "f4230a642f28dfeed7bcfafe2547f66d612e63e597a5d049d6858c1fb4df018a"
+  }
+ },
+ "n_test_all": 91339,
+ "n_test_burned": 44303
+}

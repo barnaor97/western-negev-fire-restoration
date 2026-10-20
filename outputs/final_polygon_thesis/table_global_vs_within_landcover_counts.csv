@@ -1,0 +1,19 @@
+population,land_cover_name,n_units,small_n_class_flag,median_RIS,within_class_top_decile_n,also_in_global_top_decile_n,high_within_class_but_below_global_cut_n
+reference,forest,151,False,0.38171399366300257,16,8,8
+reference,orchards,35,False,0.12440743980139655,4,0,4
+reference,shrubland,250,False,0.4721175036393106,25,25,0
+reference,grassland,290,False,0.4857442593201995,29,29,0
+reference,cropland,262,False,0.32041259643156084,27,2,25
+reference,covered agriculture,4,True,0.28763580493414337,1,0,1
+reference,built-up,8,True,0.3332273737284725,1,0,1
+reference,bare,18,True,0.3337938002672779,2,1,1
+reference,fallow,45,False,0.44691681885160506,5,5,0
+model,forest,288,False,0.46557672406058936,29,13,16
+model,orchards,22,False,0.5008357258682901,3,3,0
+model,shrubland,573,False,0.4990793594883548,58,58,0
+model,grassland,727,False,0.49472778875912937,73,72,1
+model,cropland,382,False,0.45022750551549673,39,25,14
+model,covered agriculture,12,True,0.40194918451597916,2,0,2
+model,built-up,4,True,0.5275606940138258,1,0,1
+model,bare,48,False,0.5379144615876612,5,5,0
+model,fallow,152,False,0.4787691559176892,16,16,0

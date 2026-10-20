@@ -1,0 +1,84 @@
+{
+ "generated": "2026-09-27T14:57:09Z",
+ "script": "notebooks/21_final_figures_10_11.py",
+ "python": "3.13.3",
+ "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+ "crs": "EPSG:32636",
+ "grid": "1625 x 2598 cells at 30 m, origin 620610 / 3514560 (EPSG:32636)",
+ "inputs": [
+  "outputs/inference_full_roi/{severity,persistence,recovery_gap,model_recurrence,burned_prob}_30m.tif",
+  "data/raw/landcover_2018_30m.tif",
+  "data/thesis_maps/fig_gt_fires.shp",
+  "data/thesis_maps/fig_roi_polygon.shp",
+  "outputs/final_polygon_thesis/reference_units_final.csv",
+  "outputs/final_polygon_thesis/model_units_final.csv",
+  "outputs/final_polygon_maps/reference_units.gpkg"
+ ],
+ "unit_rules": {
+  "reference": "fire_year >= 2017 polygons dissolved by rasterisation, intersected with the eligible model domain",
+  "model": "burned probability > 0.502",
+  "components": "8-connected (3x3)",
+  "land_cover": "fixed 2018 baseline, 30 m",
+  "minimum_area": "0.36 ha (4 cells)"
+ },
+ "attributes": {
+  "10a": "mean_severity_model",
+  "10b": "mean_persistence_model",
+  "10c": "mean_recovery_gap_predicted",
+  "10d": "mean_recurrence_model",
+  "11d": "within_landcover_RIS_percentile"
+ },
+ "display_limits": {
+  "mean_severity_model": {
+   "vmin": 0.015,
+   "vmax": 0.956,
+   "mode": "full",
+   "clipped_units": 0,
+   "observed_min": 0.015,
+   "observed_max": 0.956
+  },
+  "mean_persistence_model": {
+   "vmin": 0.072,
+   "vmax": 0.9411,
+   "mode": "full",
+   "clipped_units": 0,
+   "observed_min": 0.072,
+   "observed_max": 0.9411
+  },
+  "mean_recovery_gap_predicted": {
+   "vmin": 0.0009,
+   "vmax": 0.9986,
+   "mode": "full",
+   "clipped_units": 0,
+   "observed_min": 0.0009,
+   "observed_max": 0.9986
+  },
+  "mean_recurrence_model": {
+   "vmin": 0.0,
+   "vmax": 0.3777,
+   "mode": "robust",
+   "clipped_units": 22,
+   "observed_min": 0.0,
+   "observed_max": 0.7429
+  }
+ },
+ "populations": {
+  "reference_units": 1064,
+  "reference_area_ha": 2819.7,
+  "model_units": 2209,
+  "model_area_ha": 5397.48,
+  "raw_reference_ha": 2984.13,
+  "raw_model_ha": 6794.28,
+  "jaccard": 0.2055,
+  "reference_detected_pct": 55.9,
+  "model_outside_pct": 75.5,
+  "within_lc_hidden_units": 37
+ },
+ "outputs": {
+  "figure10_final.png": "eb2d1b3b20572dbcbdd5d9946176c6a032bb53d713cfac985cb8a3c8d5b4fa6d",
+  "figure10_final.pdf": "f6058df1c004a5539c92d652ceaf7857ccf76809c960d466e57a942e947961e5",
+  "figure11_final.png": "5a3590a8c5adc81aeb8f55a243b76cf6b526aedc570199a296681ed0810238be",
+  "figure11_final.pdf": "db932bf79173658dbea77a0b31b7b1c54a75975bf72b5832e77117dbe320b9c7"
+ },
+ "image_generation": "none; all panels are matplotlib renderings of the research data"
+}

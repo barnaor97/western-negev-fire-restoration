@@ -1,0 +1,7 @@
+check,value,passed
+burned set from y_burned == (recurrence target > 0),295006 pixels,True
+recovery_gap rebuilt from nbr_raw: Pearson vs stored,0.99999996,True
+recovery_gap rebuilt from nbr_raw: share within 1e-2,0.999986,True
+"recurrence target == min(fire-month count / 5, 1)",max |diff| 2.4e-08,True
+predictions_test indices == splits.json test split,91339 pixels,True
+fire labels stored with predictions == y_burned[test],,True

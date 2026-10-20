@@ -1,0 +1,4 @@
+{
+  "_comment": "Copy this file to configs/gee_config.json and put your own Earth Engine project id in it. configs/gee_config.json is listed in .gitignore and is never committed.",
+  "project": "YOUR-GEE-PROJECT"
+}

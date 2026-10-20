@@ -1,0 +1,67 @@
+{
+ "run_utc": "2026-10-03T11:15:47Z",
+ "script": "notebooks/23_figure7_seasonal_control.py",
+ "script_sha256": "5419fa9569193b13c961ea899c98d73e78617c77ec5efeb4873e68acefb658f9",
+ "inputs": {
+  "y_burned": {
+   "path": "data/processed/y_burned.npy",
+   "sha256": "321e3c03054d6555d9618f5735b1876851a79a2eb4a0a16b2df3a52428cd1e8f"
+  },
+  "nbr_raw": {
+   "path": "data/processed/nbr_raw.npy",
+   "sha256": "b1c35a8c7dba71ef877cd54782b6cc9d545657708ae013c9319015c9ec0ae756"
+  },
+  "meta": {
+   "path": "data/processed/X_scaled_meta.csv",
+   "sha256": "0abb0abbfdf89e81a95dca55491f62027de23ceccdec625b2eb5544a7e2749bd"
+  }
+ },
+ "packages": {
+  "python": "3.12.1",
+  "numpy": "2.2.2",
+  "pandas": "2.2.3",
+  "matplotlib": "3.10.0"
+ },
+ "window_months": 12,
+ "burned_events": {
+  "n_events": 319893,
+  "n_unique_pixels": 280820,
+  "n_first_fire_pixels": 279060,
+  "first_event_month": "2018-01",
+  "last_event_month": "2024-12",
+  "rule": "every labelled burned pixel-month with a complete +/-12-month window (as fig06)"
+ },
+ "nofire_comparison": {
+  "n_nofire_pixels": 304461,
+  "nofire_pixels_by_landcover": {
+   "10": 9964,
+   "11": 20992,
+   "20": 14160,
+   "30": 37960,
+   "40": 144379,
+   "41": 6114,
+   "50": 3572,
+   "60": 60630,
+   "61": 5912,
+   "80": 778
+  },
+  "construction": "C_c(t) = mean nbr_raw over no_fires pixels of dominant land-cover class c at month t; comparison at lag l = mean over burned events e of C_{c_e}(t_e + l). Composition of land cover and calendar date equals that of the burned events. No pixel-level matching."
+ },
+ "uncertainty_band": "population SD (ddof=0) of burned-event NBR at each lag, as in the original figure",
+ "first_fire_sensitivity": {
+  "max_abs_mean_difference": 0.011550599932237365
+ },
+ "reproduction_of_original_fig06": {
+  "original_n_events": 319893,
+  "original_n_pixels": 280820,
+  "original_n_first": 279060,
+  "max_abs_diff_mean": 0.0,
+  "max_abs_diff_first": 0.0
+ },
+ "outputs": [
+  "outputs/figures/fig07_event_aligned_nbr_seasonal_comparison.png",
+  "outputs/tables/nb23_t01_fig07_curves_by_lag.csv",
+  "outputs/tables/nb23_t02_fig07_event_landcover_composition.csv",
+  "outputs/tables/nb23_t03_fig07_event_calendar_composition.csv"
+ ]
+}

@@ -1,0 +1,12 @@
+measure,kind,reference,model,unit,note
+spatial units,OBSERVED,1064.0,2209.0,units,"connected component x 2018 land-cover class, minimum 0.36 ha"
+area analysed as units,OBSERVED,2819.7,5397.48,ha,
+burned footprint before the minimum-area rule,OBSERVED,2984.13,6794.28,ha,
+mean RIS (Balanced) of units,OBSERVED,0.40373867147929726,0.4699179977077324,index,same RIS formula in both
+median RIS (Balanced) of units,OBSERVED,0.41043170932043527,0.48025912926955655,index,
+mean observed NBR change 2017 minus 2025,OBSERVED,0.04409985609814395,0.04887839355369755,NBR,"positive = NBR declined; observed spectral change, not ecological recovery"
+Jaccard of the burned footprints,OBSERVED,0.20551000255195445,0.20551000255195445,index,spatial overlap of the two definitions
+Jaccard of the analysed unit footprints,OBSERVED,0.23799322033898304,0.23799322033898304,index,matches the two map panels
+reference-defined burned area also detected by the model,OBSERVED,55.861507374008504,,%,
+model-detected area that did not spatially overlap the fire-reference inventory,OBSERVED,,75.46494992846924,%,a spatial statement only; see the interpretation row
+status of model-detected area outside the inventory,INTERPRETATION,,,,"undetermined here. The fire-reference inventory is not assumed to be exhaustive, so non-overlap is not evidence of a false positive; establishing status would require an independent source"

@@ -1,0 +1,113 @@
+{
+ "results": {
+  "rf_raw": {
+   "severity": {
+    "model": "rf_raw",
+    "target": "severity",
+    "population": "burned",
+    "n_train": 206502,
+    "n_test": 44303,
+    "pearson": 0.8201296744943819,
+    "spearman": 0.8090744895686215,
+    "mae": 0.17925016582012177,
+    "rmse": 0.23863215744495392,
+    "fit_seconds": 835.5,
+    "sklearn": "1.3.2",
+    "pca_components": 14,
+    "pca_explained": 0.9539967555969405
+   },
+   "persistence": {
+    "model": "rf_raw",
+    "target": "persistence",
+    "population": "burned",
+    "n_train": 206502,
+    "n_test": 44303,
+    "pearson": 0.9366138055222794,
+    "spearman": 0.9314599937461483,
+    "mae": 0.05510236322879791,
+    "rmse": 0.0787830799818039,
+    "fit_seconds": 430.6,
+    "sklearn": "1.3.2",
+    "pca_components": 14,
+    "pca_explained": 0.9539967555969405
+   },
+   "recovery_gap": {
+    "model": "rf_raw",
+    "target": "recovery_gap",
+    "population": "burned",
+    "n_train": 206502,
+    "n_test": 44303,
+    "pearson": 0.8926818196091882,
+    "spearman": 0.8857204065026448,
+    "mae": 0.11930394172668457,
+    "rmse": 0.18225254118442535,
+    "fit_seconds": 511.7,
+    "sklearn": "1.3.2",
+    "pca_components": 14,
+    "pca_explained": 0.9539967555969405
+   }
+  },
+  "rf_pca": {
+   "severity": {
+    "model": "rf_pca",
+    "target": "severity",
+    "population": "burned",
+    "n_train": 206502,
+    "n_test": 44303,
+    "pearson": 0.7512939014435006,
+    "spearman": 0.7392784044466119,
+    "mae": 0.21045313775539398,
+    "rmse": 0.2722059488296509,
+    "fit_seconds": 88.7,
+    "sklearn": "1.3.2",
+    "pca_components": 14,
+    "pca_explained": 0.9539967555969405
+   },
+   "persistence": {
+    "model": "rf_pca",
+    "target": "persistence",
+    "population": "burned",
+    "n_train": 206502,
+    "n_test": 44303,
+    "pearson": 0.892778191710035,
+    "spearman": 0.8850760363857144,
+    "mae": 0.07331386208534241,
+    "rmse": 0.10140872746706009,
+    "fit_seconds": 79.0,
+    "sklearn": "1.3.2",
+    "pca_components": 14,
+    "pca_explained": 0.9539967555969405
+   },
+   "recovery_gap": {
+    "model": "rf_pca",
+    "target": "recovery_gap",
+    "population": "burned",
+    "n_train": 206502,
+    "n_test": 44303,
+    "pearson": 0.8477291545373118,
+    "spearman": 0.8420956425140624,
+    "mae": 0.14702516794204712,
+    "rmse": 0.21353448927402496,
+    "fit_seconds": 83.1,
+    "sklearn": "1.3.2",
+    "pca_components": 14,
+    "pca_explained": 0.9539967555969405
+   }
+  }
+ },
+ "reproduction_check": {
+  "model": "rf_raw",
+  "target": "severity",
+  "population": "all train / all test (Experiment 5 setup)",
+  "reproduced_pearson": 0.8628703902591295,
+  "published_pearson": 0.8628197115230493,
+  "abs_difference": 5.0678736080223e-05,
+  "fit_seconds": 2170.0
+ },
+ "n_train_all": 426245,
+ "n_train_burned": 206502,
+ "n_test_all": 91339,
+ "n_test_burned": 44303,
+ "pca_components": 14,
+ "pca_explained": 0.9539967555969405
+}

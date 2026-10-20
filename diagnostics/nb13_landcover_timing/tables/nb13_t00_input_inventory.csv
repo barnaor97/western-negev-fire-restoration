@@ -1,0 +1,9 @@
+input,path,size_MB,sha256_head_tail
+targets_aux.npz,data/processed/targets_aux.npz,9.7,50762e8cd1f3c60e
+X_scaled_meta.csv,data/processed/X_scaled_meta.csv,13.3,0abb0abbfdf89e81
+y_burned.npy,data/processed/y_burned.npy,263.1,2b3f70e54e1adf25
+X_scaled_mask.npy,data/processed/X_scaled_mask.npy,65.8,effc9e4cb79c7017
+nbr_raw.npy,data/processed/nbr_raw.npy,263.1,6d43c56edf523a5a
+nbr_zscore_raw.npy,data/processed/nbr_zscore_raw.npy,263.1,adef01c101b35998
+splits.json,data/processed/splits.json,4.8,0b511b9e05a9a623
+predictions_test.npz,models/main/predictions_test.npz,90.6,ce1b901b9fda4a1f
